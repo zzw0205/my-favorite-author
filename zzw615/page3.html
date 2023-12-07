@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我最喜爱的作家</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif; /* 设置页面中文字的字体为 Arial 或者无衬线字体 */
+            margin: 0; /* 清除页面内容区域的外边距 */
+            padding: 0; /* 清除页面内容区域的内边距 */
+            background-color: rgba(255, 255, 255); /* 设置页面初始背景色为白色 */
+            color: #31a89677; /* 设置页面初始字体颜色为一种透明的绿色 */
+            transition: background-color 2s, color 2s; /* 设置背景色和字体颜色的过渡效果时间为 2 秒 */
+            display: flex; /* 设置弹性布局 */
+            flex-direction: column; /* 设置主轴方向为垂直方向 */
+            align-items: left; /* 设置项目在交叉轴上居中对齐 */
+        }
+
+        /* 导航栏样式 */
+        nav {
+            display: flex; /* 将导航栏设置为弹性布局 */
+            justify-content: flex-end; /* 将导航栏内容靠右对齐 */
+            align-items: center; /* 设置导航栏内容的垂直居中 */
+            height: 50px; /* 设置导航栏的高度 */
+            width: 100%; /* 设置导航栏的宽度 */
+            background-color: rgba(50, 117, 90, 0.482); /* 设置导航栏的背景颜色 */
+        }
+
+        nav a {
+            color: #ffffff; /* 设置导航栏链接的颜色 */
+            /* text-decoration: none; 去除导航栏链接的下划线 */
+            margin: 0 20px; /* 设置导航栏链接的左右外边距为 20 像素 */
+            transition: color 2s; /* 设置导航栏链接颜色变化的过渡效果 */
+        }
+
+        nav a:hover {
+            color: #00bcd4; /* 鼠标悬停在导航栏链接上时，链接颜色变为蓝色 */
+        }
+
+        /* 头部内容样式 */
+        header {
+            display: flex; /* 将头部内容设置为弹性布局 */
+            align-items: left; /* 设置头部内容的垂直居中 */
+            /* padding: 20px; */ /* 设置头部内容的内边距为 20 像素 */
+            width: 100%; /* 设置头部内容的宽度占据整个窗口 */
+            background-color: rgba(30, 113, 158, 0.587); /* 设置头部内容的背景颜色 */
+        }
+
+        header img {
+            width: 200px; /* 设置图片的宽度为 200 像素 */
+            height: 100px; /* 设置图片的高度为 100 像素 */
+            margin-left: 20px; /* 设置图片与文字之间的左边距为 10 像素 */
+        }
+
+        header h1 {
+            color: rgba(11, 234, 30, 0.696); /* 设置文字的颜色 */
+            margin: 0; /* 修正默认的上下外边距 */
+            position: relative; /* 开启相对定位 */
+            top: 10px; /* 向下偏移 10 像素 */
+            right: -200px; /* 向右偏移 200 像素 */
+        }
+        
+        /* 导航栏链接的样式，可修改 */
+        nav a {
+            font-size: 16px; /* 导航栏链接字体大小 */
+        }
+
+        
+        /* 页面内容区域样式 */
+        .container {
+        display: flex;
+        margin-top: 20px;
+        }
+    
+        .image {
+        margin-right: 10px;
+        margin-left: 20px;
+        }
+        
+        .image img {
+        width: 200px; /* 可根据需要调整图片大小 */
+        height: auto;
+        transition: transform 0.5s;
+        }
+        
+        .image img:hover {
+        transform: scale(1.1);
+        }
+        
+        .text {
+        flex-grow: 1;
+        color: #a8313177; 
+        }
+  </style>
+</head>
+<body>
+
+    <!-- 头部内容 -->
+    <header>
+        <img src="photo/史铁生04.png" alt="Logo"> <!-- 请替换为你的Logo图片路径 -->
+        <h1>唯有文字能担当此任，宣告生命曾经在场。</h1> <!-- 请替换为你的网站名称 -->
+    </header>
+
+
+    <!-- 导航栏 -->
+    <nav>
+        <a href="index.html">与君初识</a>
+        <a href="page1.html">作者简介</a>
+        <a href="page2.html">代表作</a>
+        <a href="page3.html">世人眼中的他</a>
+        <a href="page4.html">联系我吧</a>
+        <a href="https://teardestin.github.io/cs2306-519-/">返回寝室主页</a>
+        <!-- <a href="#">返回</a> -->
+    </nav>
+
+    <!-- 主页内容 -->
+    <div class="container">
+        <div class="image">
+          <img src="photo/史铁生02.png" alt="Image 1">
+        </div>
+        <div class="text">
+          <h3>邓晓芒说：</h3>
+          <p>“我们面前终于出现了一位作家，一位真正的创造者，一位颠覆者……从自己的灵魂本原地创造出一种语言、一种理想。”</p>
+        </div>
+      </div>
+      
+      <div class="container">
+        <div class="image">
+          <img src="photo/史铁生05.png" alt="Image 2">
+        </div>
+        <div class="text">
+          <h3>韩少功说：</h3>
+          <p>“铁生是一个生命的奇迹，在漫长的轮椅生涯里至强至尊，一座文学的高峰，其想象力和思辨力一再刷新当代精神的高度，一种千万人心痛的温暖，让人们在瞬息中触摸永恒，在微粒中进入广远，在艰难和痛苦中却打心眼里宽厚地微笑。”</p>
+        </div>
+      </div>
+      
+      <div class="container">
+        <div class="image">
+          <img src="photo/史铁生08.png" alt="Image 3">
+        </div>
+        <div class="text">
+          <h3>人民网评：</h3>
+          <p>“看透生活再热爱生活，这就是史铁生的理想主义”</p>
+        </div>
+      </div>
+      
+      <div class="container">
+        <div class="image">
+          <img src="photo/史铁生06.png" alt="Image 4">
+        </div>
+        <div class="text">
+          <h3>史铁生说：</h3>
+          <p>“把疾病交给医生，把命运交给上帝，把快乐和勇气留给自己。”<br>“职业是生病，业余是写作。”<br>“人不能没有爱，尤其不能没有所爱。”</p>
+        </div>
+      </div>
+    </body>
+    </html>

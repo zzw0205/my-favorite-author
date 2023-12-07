@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我最喜爱的作家</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif; /* 设置页面中文字的字体为 Arial 或者无衬线字体 */
+            margin: 0; /* 清除页面内容区域的外边距 */
+            padding: 0; /* 清除页面内容区域的内边距 */
+            background-color: rgba(50, 117, 90, 0.482); /* 设置页面初始背景色为白色 */
+            color: #31a89677; /* 设置页面初始字体颜色为一种透明的绿色 */
+            transition: background-color 2s, color 2s; /* 设置背景色和字体颜色的过渡效果时间为 2 秒 */
+            display: flex; /* 设置弹性布局 */
+            flex-direction: column; /* 设置主轴方向为垂直方向 */
+            align-items: left; /* 设置项目在交叉轴上居中对齐 */
+            width:100%;
+            height: auto;
+        }
+
+        /* 导航栏样式 */
+        nav {
+            display: flex; /* 将导航栏设置为弹性布局 */
+            justify-content: flex-end; /* 将导航栏内容靠右对齐 */
+            align-items: center; /* 设置导航栏内容的垂直居中 */
+            height: 50px; /* 设置导航栏的高度 */
+            width: 100%; /* 设置导航栏的宽度 */
+            background-color: rgba(50, 117, 90, 0.482); /* 设置导航栏的背景颜色 */
+        }
+
+        nav a {
+            color: #ffffff; /* 设置导航栏链接的颜色 */
+            /* text-decoration: none; 去除导航栏链接的下划线 */
+            margin: 0 20px; /* 设置导航栏链接的左右外边距为 20 像素 */
+            transition: color 2s; /* 设置导航栏链接颜色变化的过渡效果 */
+        }
+
+        nav a:hover {
+            color: #00bcd4; /* 鼠标悬停在导航栏链接上时，链接颜色变为蓝色 */
+        }
+
+        /* 头部内容样式 */
+        header {
+            display: flex; /* 将头部内容设置为弹性布局 */
+            align-items: left; /* 设置头部内容的垂直居中 */
+            /* padding: 20px; */ /* 设置头部内容的内边距为 20 像素 */
+            width: 100%; /* 设置头部内容的宽度占据整个窗口 */
+            background-color: rgba(30, 113, 158, 0.587); /* 设置头部内容的背景颜色 */
+        }
+
+        header img {
+            width: 200px; /* 设置图片的宽度为 200 像素 */
+            height: 100px; /* 设置图片的高度为 100 像素 */
+            margin-left: 20px; /* 设置图片与文字之间的左边距为 10 像素 */
+        }
+
+        header h1 {
+            color: rgba(11, 234, 30, 0.696); /* 设置文字的颜色 */
+            margin: 0; /* 修正默认的上下外边距 */
+            position: relative; /* 开启相对定位 */
+            top: 10px; /* 向下偏移 10 像素 */
+            right: -200px; /* 向右偏移 200 像素 */
+        }
+
+        /* 页面内容区域样式 */
+        section {
+            display: flex; /* 将头部内容设置为弹性布局 */
+            text-align: center;
+            padding: 20px;
+            transition: background-image 2s;
+            width: 100%; /* 设置头部内容的宽度占据整个窗口 */
+        }
+        section img{
+            width: 600px; /* 设置图片的宽度为 200 像素 */
+            height: 400px; /* 设置图片的高度为 100 像素 */
+            margin-left: 10px; /* 设置图片与文字之间的左边距为 10 像素 */
+            margin-right: 20px; /* 设置图片与文字之间的右边距为 10 像素 */
+            transition: all 0.5s ease-in-out;
+        }
+
+        section img:hover {
+            transform: scale(1.1);
+        }
+
+        /* 页面标题样式，可修改 */
+        section h1 {
+            color: #00bcd4; /* 页面标题颜色 */
+            margin: 0; /* 修正默认的上下外边距 */
+            position: relative; /* 开启相对定位 */
+            top: 10px; /* 向下偏移 10 像素 */
+            right: -80px; /* 向右偏移 200 像素 */
+            font-size: 22px;
+            width:100%;
+        }
+
+        /* 页面段落文字样式，可修改 */
+        section p {
+            color: #000000; /* 段落文字颜色 */
+            margin: 0; /* 修正默认的上下外边距 */
+            position: relative; /* 开启相对定位 */
+            top: 60px; /* 向下偏移 10 像素 */
+            right: 300px; /* 向右偏移 200 像素 */
+            font-size: 18px;
+        }
+        
+        /* 导航栏链接的样式，可修改 */
+        nav a {
+            font-size: 16px; /* 导航栏链接字体大小 */
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- 头部内容 -->
+    <header>
+        <img src="photo/史铁生04.png" alt="Logo"> <!-- 请替换为你的Logo图片路径 -->
+        <h1>唯有文字能担当此任，宣告生命曾经在场。</h1> <!-- 请替换为你的网站名称 -->
+    </header>
+
+
+    <!-- 导航栏 -->
+    <nav>
+        <a href="index.html">与君初识</a>
+        <a href="page1.html">作者简介</a>
+        <a href="page2.html">代表作</a>
+        <a href="page3.html">世人眼中的他</a>
+        <a href="page4.html">联系我吧</a>
+        <a href="https://teardestin.github.io/cs2306-519-/">返回寝室主页</a>
+        <!-- <a href="#">返回</a> -->
+    </nav>
+
+    <!-- 主页内容 -->
+    <section id="index" class="content">
+        <img src="photo/史铁生03.png" alt="photo">
+        <h1>一七年夏，与君初识</h1>
+        <p>
+            一七年夏，中学懵懂；<br>
+            少年初与君相识——<br>
+            轮椅辗转，时光荏苒；<br>
+            生命的碾痕久久回荡；<br><br>
+            <tr>“世界以痛吻我，我却报之以歌”，史铁生用他残缺而又丰满的一生完美地诠释了这句充满力量的诗。<br>
+                正值青春年华，双腿却瘫痪，写作成为支撑他活下去的唯一动力。<br>
+                他是一个将人生与写作同构的精神跋涉者、一个无时不面临着生活苦难和人生困境的生命体验者、一个渐悟生死崇高美学的灵魂超越者，<br>
+                看透生活再去热爱生活，如此艰辛，如此难得。</tr>
+        </p>
+    </section>
+
+</body>
+</html>

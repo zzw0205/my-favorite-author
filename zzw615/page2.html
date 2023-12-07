@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我最喜爱的作家</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif; /* 设置页面中文字的字体为 Arial 或者无衬线字体 */
+            margin: 0; /* 清除页面内容区域的外边距 */
+            padding: 0; /* 清除页面内容区域的内边距 */
+            background-color: rgba(255, 255, 255); /* 设置页面初始背景色为白色 */
+            color: #31a89677; /* 设置页面初始字体颜色为一种透明的绿色 */
+            transition: background-color 2s, color 2s; /* 设置背景色和字体颜色的过渡效果时间为 2 秒 */
+            display: flex; /* 设置弹性布局 */
+            flex-direction: column; /* 设置主轴方向为垂直方向 */
+            align-items: left; /* 设置项目在交叉轴上居中对齐 */
+            width:100%;
+            height: auto;
+        }
+
+        /* 导航栏样式 */
+        nav {
+            display: flex; /* 将导航栏设置为弹性布局 */
+            justify-content: flex-end; /* 将导航栏内容靠右对齐 */
+            align-items: center; /* 设置导航栏内容的垂直居中 */
+            height: 50px; /* 设置导航栏的高度 */
+            width: 100%; /* 设置导航栏的宽度 */
+            background-color: rgba(50, 117, 90, 0.482); /* 设置导航栏的背景颜色 */
+        }
+
+        nav a {
+            color: #ffffff; /* 设置导航栏链接的颜色 */
+            /* text-decoration: none; 去除导航栏链接的下划线 */
+            margin: 0 20px; /* 设置导航栏链接的左右外边距为 20 像素 */
+            transition: color 2s; /* 设置导航栏链接颜色变化的过渡效果 */
+        }
+
+        nav a:hover {
+            color: #00bcd4; /* 鼠标悬停在导航栏链接上时，链接颜色变为蓝色 */
+        }
+
+        /* 头部内容样式 */
+        header {
+            display: flex; /* 将头部内容设置为弹性布局 */
+            align-items: left; /* 设置头部内容的垂直居中 */
+            /* padding: 20px; */ /* 设置头部内容的内边距为 20 像素 */
+            width: 100%; /* 设置头部内容的宽度占据整个窗口 */
+            background-color: rgba(30, 113, 158, 0.587); /* 设置头部内容的背景颜色 */
+        }
+
+        header img {
+            width: 200px; /* 设置图片的宽度为 200 像素 */
+            height: 100px; /* 设置图片的高度为 100 像素 */
+            margin-left: 20px; /* 设置图片与文字之间的左边距为 10 像素 */
+        }
+
+        header h1 {
+            color: rgba(11, 234, 30, 0.696); /* 设置文字的颜色 */
+            margin: 0; /* 修正默认的上下外边距 */
+            position: relative; /* 开启相对定位 */
+            top: 10px; /* 向下偏移 10 像素 */
+            right: -200px; /* 向右偏移 200 像素 */
+        }
+    .container {
+      display: flex;
+    }
+
+
+    .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0; /* 这里设置每组图片的上下间距为20像素 */
+        }
+
+     .gallery img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px; /* 这里设置每张图片的外边距为10像素 */
+            transition: transform 0.5s ease; /* 添加过渡效果，时长为0.5秒 */
+        }
+
+    .gallery img:hover {
+            transform: scale(1.1); /* 鼠标悬停时图片放大1.1倍 */
+        }
+
+    .image {
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+
+    .text {
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+    <!-- 头部内容 -->
+    <header>
+        <img src="photo/史铁生04.png" alt="Logo"> <!-- 请替换为你的Logo图片路径 -->
+        <h1>唯有文字能担当此任，宣告生命曾经在场。</h1> <!-- 请替换为你的网站名称 -->
+    </header>
+
+
+    <!-- 导航栏 -->
+    <nav>
+        <a href="index.html">与君初识</a>
+        <a href="page1.html">作者简介</a>
+        <a href="page2.html">代表作</a>
+        <a href="page3.html">世人眼中的他</a>
+        <a href="page4.html">联系我吧</a>
+        <a href="https://teardestin.github.io/cs2306-519-/">返回寝室主页</a>
+        <!-- <a href="#">返回</a> -->
+    </nav>
+  <div class="container">
+    <img src="photo/我的遥远的清平湾.png" alt="图片1" class="image">
+    <div class="text">
+      <h2>《我的遥远的清平湾》</h2>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;《我的遥远的清平湾》是中国当代作家史铁生创作的短篇小说，是作者的成名之作，于1983年发表于《青年文学》第1期。该小说描绘了黄土高原上的小山村和一个风趣的放牛倌的故事，以抒情散文的笔法，通过老知青对插队生活的回忆，真实鲜活、自然贴切地描绘了革命根据地陕北黄土高原的风貌，为读者展示了陕北人民的朴实、忠厚、积极乐观的性格，激发人们认真地思考人生，思考社会。</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <img src="photo/病隙碎笔.png" alt="图片2" class="image">
+    <div class="text">
+      <h2>《病隙碎笔》</h2>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;《病隙碎笔》 ，长篇哲思抒情散文随笔集，中国当代著名作家史铁生著。《病隙碎笔》中，史铁生用生动而通俗且不失优美的语言追寻和探索了关于我们人生未知的道理：人生、命运、爱情、金钱、道义、信仰，健康的心态、成功的途径和价值、孩子的教育、家庭的纽带。残疾与爱情是史铁生命运的关键词。《病隙碎笔》已不是单纯数量上的又一本散文随笔集，而是一部充满了生命体验的人生笔记。</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <img src="photo/我与地坛.png" alt="图片3" class="image">
+    <div class="text">
+      <h2>《我与地坛》</h2>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;我与地坛》是一篇长篇哲思抒情散文，中国当代作家史铁生著。该作是史铁生文学作品中，充满哲思又极为人性化的代表作之一。其前第一段和第二段被纳入人民教育出版社的高一教材中。是作者十五年来摇着轮椅在地坛思索的结晶。散文中饱含作者对人生的种种感悟，对亲情的深情讴歌。地坛只是一个载体，而文章的本质却是一个绝望的人寻求希望的过程，以及对母亲的思念。</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <img src="photo/务虚笔记.png" alt="图片4" class="image">
+    <div class="text">
+      <h2>《务虚笔记》</h2>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;《务虚笔记》是2006年1月由春风文艺出版社出版的长篇小说，作者是史铁生，于1996年《收获》杂志首次出版。小说通过动物的繁殖、植物的生死，通过童年经验、革命和背叛、爱情的意义等来思考虚无。小说行文优美、凝练，情感真挚、厚重，且好读，处处透映着一种对人世沧桑的如泣如诉、似幽似怨的伤感与领悟。隔着咫尺的空间与浩瀚的时间，史铁生将带着读者凝望生命的哀怨与无常，体味历史的丰饶与短暂。</p>
+    </div>
+  </div>
+</body>
+</html>
